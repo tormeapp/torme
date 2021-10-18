@@ -1,0 +1,29 @@
+@import '../vars';
+
+.login-wrapper {
+    padding: 15px 20px;
+    .title {
+        font-family: $font;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .subtitle {
+        font-size: 24px;
+        font-family: $font;
+        margin-bottom: 35px;
+    }
+
+    .form-wrapper {
+        margin: auto;
+        padding: 15px;
+        border-radius: 12px;
+        width: 480px;
+        height: 550px;
+        background-color: darken(bisque, 10%);
+    }
+    .form-container {
+        background-color: bisque;
+        border-radius: 12px;
+        height: 100%;
+    }
+}

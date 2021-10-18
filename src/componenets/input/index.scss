@@ -1,0 +1,21 @@
+@import '../../vars';
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35px;
+
+    .placeholder {
+        font-family: $font;
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    input {
+     margin: auto;
+     margin-bottom: 15px;
+     width: 50%;
+     height: 25px;
+     border-radius: 5px; 
+    }
+}

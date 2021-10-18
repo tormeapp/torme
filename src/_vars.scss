@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); 
+
+$font: 'Ubuntu', sans-serif;
+$green: lighten(green, 15.5%);
+$red: lighten(red, 13%);
+$blue: lighten(blue, 13%);
+
+@mixin cancel-colors {
+    background-color: $red;
+    color: white;
+
+    &:hover {
+        background-color: lighten($red, 3%);
+    }
+}
+
+@mixin submit-colors {
+    background-color: $green;
+    color: white;
+
+    &:hover {
+        background-color: lighten($green, 2%);
+    }
+}
+
+@mixin accept-colors {
+    background-color: $blue;
+    color: white;
+
+    &:hover {
+        background-color: lighten($blue, 5%);
+    }
+}

@@ -1,0 +1,28 @@
+@import '../../vars';
+
+.btn-wrapper {
+    // width: 100%;
+    button {
+        height: 40px;
+        width: 35%;
+        border-radius: 12px;
+        border: 2px solid gray;
+        &:hover {
+            cursor: pointer;
+            scale: 50%;
+            transition: .5s;
+        }
+    }
+}
+
+.submit {
+    @include submit-colors;
+}
+
+.cancel {
+    @include cancel-colors;
+}
+
+.accept {
+    @include accept-colors;
+}
