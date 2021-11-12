@@ -4,13 +4,13 @@ import { getAuth, signInWithEmailAndPassword} from 'firebase/auth';
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-    apiKey: `${env.REACT_APP_API_KEY}`,
-    authDomain: `${env.REACT_APP_AUTH_DOMAIN}`,
-    projectId: `${env.REACT_APP_PROJECT_ID}`,
-    storageBucket: `${env.REACT_APP_STORAGE_BUCKET}`,
-    messagingSenderId: `${env.REACT_APP_MESSAGINMG_SENDER_ID}`,
-    appId: `${env.REACT_APP_APP_ID}`,
-    measurementId: `${env.REACT_APP_MEASUREMENT_ID}`,
+    apiKey: `AIzaSyCK4cRMMqg4TP2EbVinMESGoe6XbVMujqg`,
+    authDomain: `tormetesting.firebaseapp.com`,
+    projectId: `tormetesting`,
+    storageBucket: `tormetesting.appspot.com`,
+    messagingSenderId: `924820813100`,
+    appId: `1:924820813100:web:3297c00aa8859ed3c52889`,
+    measurementId: `G-9RB3BB40BR`,
 };
 
 const app = initializeApp(firebaseConfig);
