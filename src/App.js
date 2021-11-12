@@ -10,6 +10,7 @@ function App() {
   useEffect(() => {
       if (user) {
         // get data from db
+        
       }
       
   },[user])
