@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { loginUser } from '../fb';
 import './index.scss';
 
 import Input from '../componenets/input';
@@ -21,6 +22,11 @@ const LoginPage = () => {
         })
     }
 
+    const handleLogin = () => {
+        const user = loginUser(loginForm.username, loginForm.password);
+        console.log(user);
+    }
+
     return ( <div className="login-wrapper">
                 <div className="title-wrapper">
                     <div className="title">TorMe Admin Workstation</div>
@@ -28,12 +34,13 @@ const LoginPage = () => {
                 </div>
                 <div className="form-wrapper">
                     <div className="form-container">
+                        <div className="inputs-wrapper">
                         <Input
                         name             ={"username"} 
                         type             ={"text"}
                         value            ={loginForm.username}
                         handleInputChange={handleInputChange}
-                        placeholder      ={"Username"}
+                        placeholder      ={"Username/Email"}
                         />
                         <Input
                         name             ={"password"} 
@@ -45,8 +52,9 @@ const LoginPage = () => {
                         <Button
                         text             ={"Login"}
                         type             ={"accept"}
-                        handleOnClick ={() => {alert('lol')}}
+                        handleOnClick ={() => handleLogin()}
                         />
+                        </div>
                     </div>
                 </div>
             </div> 
